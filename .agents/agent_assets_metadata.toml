@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "k68PThobo0zFREueNUkDh"
+uri = "file://sreedeep-portfolio.tar.gz"
+type = "unspecified"
+title = "sreedeep-portfolio.tar.gz"
