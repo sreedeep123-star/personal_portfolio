@@ -67,22 +67,6 @@ export function Certificates() {
           <div className="h-px w-16 bg-gradient-to-r from-primary/60 to-transparent" />
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="flex items-start gap-3 p-4 rounded-xl border border-dashed border-primary/20 bg-primary/4 text-muted-foreground text-sm font-sans"
-        >
-          <Award className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-          <span>
-            Certificate files load automatically — add your scans to{' '}
-            <code className="font-mono text-primary text-xs bg-primary/10 px-1.5 py-0.5 rounded">public/certificates/cert-N.jpg</code>{' '}
-            or{' '}
-            <code className="font-mono text-primary text-xs bg-primary/10 px-1.5 py-0.5 rounded">cert-N.pdf</code>{' '}
-            to display them here.
-          </span>
-        </motion.div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {certificates.map((cert, i) => (
             <motion.div
