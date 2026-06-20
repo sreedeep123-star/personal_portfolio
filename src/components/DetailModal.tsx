@@ -1,6 +1,6 @@
 import { ReactNode, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ImageOff } from "lucide-react";
+import { X, ImageOff, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface DetailModalProps {
@@ -21,12 +21,31 @@ interface DetailModalProps {
  */
 function CertificateImage({ src, alt }: { src: string | null | undefined; alt: string }) {
   const [errored, setErrored] = useState(false);
+  const isPdf = src?.toLowerCase().endsWith(".pdf");
 
   if (!src || errored) {
     return (
       <div className="w-full aspect-[4/3] rounded-lg border-2 border-dashed border-primary/20 bg-background/50 flex flex-col items-center justify-center gap-3 text-muted-foreground">
         <ImageOff className="w-8 h-8 text-primary/30" />
         <span className="font-mono text-xs uppercase tracking-widest">Certificate image coming soon</span>
+      </div>
+    );
+  }
+
+  if (isPdf) {
+    return (
+      <div className="w-full aspect-[4/3] rounded-lg border border-primary/10 bg-background/50 flex flex-col items-center justify-center gap-3 p-4 text-center text-muted-foreground">
+        <FileText className="w-10 h-10 text-primary" />
+        <p className="text-sm font-semibold text-foreground">PDF Certificate</p>
+        <p className="text-xs text-muted-foreground/70">Preview is not available here.</p>
+        <a
+          href={src}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-xs font-medium text-primary transition hover:bg-primary/10"
+        >
+          Open certificate
+        </a>
       </div>
     );
   }

@@ -290,7 +290,7 @@ export function Projects() {
           className="flex justify-center"
         >
           <a
-            href="https://github.com/sreedeepreddy"
+            href="https://github.com/sreedeep123-star"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2.5 px-6 py-3 rounded-full border border-primary/25 text-primary font-mono text-xs uppercase tracking-wider hover:bg-primary/8 hover:border-primary/50 transition-all duration-200 group"

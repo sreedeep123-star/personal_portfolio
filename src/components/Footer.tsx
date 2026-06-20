@@ -1,8 +1,8 @@
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const EMAIL = "deeps510813@gmail.com";
-const GITHUB_URL = "https://github.com/sreedeepreddy";
-const LINKEDIN_URL = "https://linkedin.com/in/sreedeepreddy";
+const GITHUB_URL = "https://github.com/sreedeep123-star";
+const LINKEDIN_URL = "https://www.linkedin.com/in/sreedeep-papireddy-234113323/";
 
 const navLinks = [
   { name: "About", href: "#about" },

@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
-const GITHUB_URL = "https://github.com/sreedeepreddy";
-const LINKEDIN_URL = "https://linkedin.com/in/sreedeepreddy";
+const GITHUB_URL = "https://github.com/sreedeep123-star";
+const LINKEDIN_URL = "https://www.linkedin.com/in/sreedeep-papireddy-234113323/";
 const EMAIL = "deeps510813@gmail.com";
 
 function TypewriterText({ phrases }: { phrases: string[] }) {

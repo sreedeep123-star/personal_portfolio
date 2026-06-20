@@ -11,8 +11,8 @@ const links = [
   { name: "Contact", href: "#contact" },
 ];
 
-const GITHUB_URL = "https://github.com/sreedeepreddy";
-const LINKEDIN_URL = "https://linkedin.com/in/sreedeepreddy";
+const GITHUB_URL = "https://github.com/sreedeep123-star";
+const LINKEDIN_URL = "https://www.linkedin.com/in/sreedeep-papireddy-234113323/";
 
 export function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -87,13 +87,14 @@ export function Nav() {
               <Linkedin className="w-4 h-4" />
             </a>
 
-            <button
-              onClick={() => window.print()}
+            <a
+              href="/resume/Sreedeep_Papireddy_Resume.txt"
+              download
               className="ml-1 flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-primary/25 text-primary font-mono text-xs uppercase tracking-wider hover:bg-primary/8 hover:border-primary/50 transition-all duration-200"
             >
               <Download className="w-3 h-3" />
               Resume
-            </button>
+            </a>
           </div>
         </nav>
 
